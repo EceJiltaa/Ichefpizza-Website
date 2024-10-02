@@ -905,3 +905,19 @@ padding: 15rem;
     text-decoration: underline;
     color: #ffc088;
 }
+
+.second-nav-section{
+    display: flex;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.second-nav, .second-nav-0{
+    margin-left: 2rem;
+    color: black;
+}
+
+.second-nav:hover, .second-nav-0:hover{
+    text-decoration: underline;
+    color:  #ff7800;
+}
