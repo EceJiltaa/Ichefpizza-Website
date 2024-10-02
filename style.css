@@ -896,3 +896,12 @@ text-decoration: underline;
 .vegetarian{
 padding: 15rem;
 }
+
+.content-name{
+    color: black;
+}
+
+.content-name:hover{
+    text-decoration: underline;
+    color: #ffc088;
+}
