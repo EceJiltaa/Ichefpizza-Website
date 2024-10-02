@@ -921,3 +921,8 @@ padding: 15rem;
     text-decoration: underline;
     color:  #ff7800;
 }
+
+.our-number{
+    padding: 7rem;
+    border: 1px solid rgb(210, 210, 210);
+}
