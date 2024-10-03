@@ -38,7 +38,6 @@
     <div class="heading">
         <h1>Meniu jonë</h1>
     </div>
-    <!-- pizza somun header CELECEK -->
     <section>
         <div class="second-nav-section">
             <a href="#pizza" class="second-nav-0" style="margin-left: 0 !important;">pizza</a>
@@ -238,7 +237,7 @@
                         </div>
 
                         <div class="box" data-name="pizza">
-                            <div class="info">
+                            <div class="info sandwich-extra-menu">
                                 <h3>Sandwich extra</h3>
                                 <div class="price"><span>4.00€</span></div>
                             </div>
@@ -255,69 +254,62 @@
 
                     <h3 id="somun" class="title">PIJET</h3>
 
-                    <div class="box-container">
+                    <div class="box-container drink-container">
 
                         <div class="box" data-name="pizza">
-                            <div class="info" style="display: flex; ">
+                            <div class="info info-drink" style="display: flex; ">
                                 <h3>Coca Cola</h3>
-                                <div class="price" style="margin-left: 3rem;"><span>1.50€</span></div>
-                            </div>
-                        </div>
-
-                        <div class="box" data-name="pizza">
-                            <div class="info">
-                                <h3>Coca Cola Zero</h3>
                                 <div class="price"><span>1.50€</span></div>
                             </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
+                        </div>
+
+                        <div class="box drink-box" data-name="pizza">
+                            <div class="info info-drink">
+                                <h3>Coca Cola Zero</h3>
+                                <div class="price "><span>1.50€</span></div>
+                            </div>
                         </div>
 
                         <div class="box" data-name="pizza">
-                            <div class="info">
+                            <div class="info info-drink">
                                 <h3>fanta</h3>
                                 <div class="price"><span>1.50€</span></div>
                             </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
                         </div>
 
                         <div class="box" data-name="pizza">
-                            <div class="info">
+                            <div class="info info-drink">
                                 <h3>schweppes</h3>
                                 <div class="price"><span>1.50€</span></div>
                             </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
                         </div>
 
                         <div class="box" data-name="pizza">
-                            <div class="info">
+                            <div class="info info-drink">
                                 <h3>sprite</h3>
                                 <div class="price"><span>1.50€</span></div>
                             </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
                         </div>
 
                         <div class="box" data-name="pizza">
-                            <div class="info">
+                            <div class="info info-drink">
                                 <h3>uje</h3>
                                 <div class="price"><span>1.00€</span></div>
                             </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
                         </div>
 
                         <div class="box" data-name="pizza">
-                            <div class="info">
+                            <div class="info info-drink">
                                 <h3>uje mineral</h3>
                                 <div class="price"><span>1.00€</span></div>
                             </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
                         </div>
 
                         <div class="box" data-name="pizza">
-                            <div class="info">
+                            <div class="info info-drink">
                                 <h3>Lengjet</h3>
                                 <div class="price"><span>1.50€</span></div>
                             </div>
-                            <img src="images/about.jpg" width="100px" height="100px" alt="">
                         </div>
                     </div>
                 </div>
@@ -362,7 +354,8 @@
         name: 'Pizza',
         description: 'Sos, kackavall, pershuto, kepurdha',
         prices: ['3.00€', '3.50€', '5.00€'],
-        image: 'images/about.jpg'
+        image: 'images/about.jpg',
+        class: 'pizza-class'
     },
     {
         name: 'Margarita',
@@ -497,7 +490,6 @@ const container = document.getElementById('pizza-container');
 let pizzasShown = 6; // İlk başta gösterilecek pizza sayısı
 
 function loadPizzas() {
-    // İlk 6 pizzayı gösterelim
     container.innerHTML = '';
     for (let i = 0; i < pizzasShown && i < pizzas.length; i++) {
         const pizza = pizzas[i];
